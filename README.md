@@ -10,16 +10,20 @@ A simple React calculator App.
 ### How do I get set up? ###
 
 Clone the Repository:
-		git clone git@bitbucket.org:v4d/rcalc.git
+
+  git clone git@bitbucket.org:v4d/rcalc.git
 
 Get into the Repositiory Folder:
-		cd rcalc
+
+cd rcalc
 
 Run yarn to load dependencies:
-		yarn
+
+  yarn
 
 Run Application:
-		yarn start
+
+  yarn start
 
 
 ### Contribution guidelines ###
