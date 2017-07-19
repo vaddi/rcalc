@@ -2,6 +2,7 @@
 
 A simple React calculator App.
 
+![screenshot](https://github.com/vaddi/rcalc/blob/master/public/screenshot.png "Screenshot")
 
 ### What is this repository for? ###
 
