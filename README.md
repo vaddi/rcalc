@@ -14,7 +14,7 @@ A simple React calculator App.
 
 Clone the Repository:
 
-    git clone git@bitbucket.org:v4d/rcalc.git
+    git clone https://github.com/vaddi/rcalc.git
 
 Get into the Repositiory Folder:
 
@@ -34,4 +34,11 @@ Run Application:
 * Writing tests
 * Code review
 * Other guidelines
+
+
+### Learn React ###
+
+[GitHub](https://www.codecademy.com/)
+[GitHub](https://facebook.github.io/react/)
+
 
