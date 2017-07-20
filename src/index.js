@@ -10,6 +10,7 @@ const initialOp = undefined;
 
 class Calculator extends React.Component {
   
+  // https://babeljs.io/docs/plugins/transform-class-properties/
   constructor(props) {
     super(props);
     // Initial State
@@ -27,6 +28,7 @@ class Calculator extends React.Component {
   }
   
   calculate() {
+    // callback variante
     // do calculation stuff
     const buffer = parseInt(this.state.buffer,10);
     const value = parseInt(this.state.displayValue,10);
@@ -123,15 +125,37 @@ class Calculator extends React.Component {
           <Display value={this.state.displayValue} onChange={this.updateDisplay} />
         </div>
         <br />
-        <div>
-          <Button className="double del" title="Del" onClick={this.clearDisplay} /> <Button title="%" value="%" onClick={this.setOperator} className="op" /> <Button title="+" value="+" onClick={this.setOperator} className="op" />
-        </div>
-        <div>
-          <Button title="7" value="7" onClick={this.setNumber} /> <Button title="8" value="8" onClick={this.setNumber} /> <Button title="9" value="9" onClick={this.setNumber} /> <Button title="-" value="-" onClick={this.setOperator} className="op" /> <br />
-          <Button title="4" value="4" onClick={this.setNumber} /> <Button title="5" value="5" onClick={this.setNumber} /> <Button title="6" value="6" onClick={this.setNumber} /> <Button title="*" value="*" onClick={this.setOperator} className="op" /> <br />
-          <Button title="1" value="1" onClick={this.setNumber} /> <Button title="2" value="2" onClick={this.setNumber} /> <Button title="3" value="3" onClick={this.setNumber} /> <Button title="/" value="/" onClick={this.setOperator} className="op" /> <br />
-          <Button className="double" title="0" value="0" onClick={this.setNumber} /> <Button title="." value="." /> <Button title="=" onClick={this.calculate} className="calc" />
-        </div>
+        <span>
+          <Button className="double del" title="Del" onClick={this.clearDisplay} />
+          <Button title="%" value="%" onClick={this.setOperator} className="op" />
+          <Button title="+" value="+" onClick={this.setOperator} className="op" />
+        </span>
+        <span>
+          <Button title="7" value="7" onClick={this.setNumber} />
+          <Button title="8" value="8" onClick={this.setNumber} />
+          <Button title="9" value="9" onClick={this.setNumber} />
+          <Button title="-" value="-" onClick={this.setOperator} className="op" />
+        </span>
+        <br />
+        <span>
+          <Button title="4" value="4" onClick={this.setNumber} />
+          <Button title="5" value="5" onClick={this.setNumber} />
+          <Button title="6" value="6" onClick={this.setNumber} />
+          <Button title="*" value="*" onClick={this.setOperator} className="op" />
+        </span>
+        <br />
+        <span>
+          <Button title="1" value="1" onClick={this.setNumber} />
+          <Button title="2" value="2" onClick={this.setNumber} />
+          <Button title="3" value="3" onClick={this.setNumber} />
+          <Button title="/" value="/" onClick={this.setOperator} className="op" />
+        </span>
+        <br />
+        <span>
+          <Button className="double" title="0" value="0" onClick={this.setNumber} />
+          <Button title="." value="." />
+          <Button title="=" onClick={this.calculate} className="calc" />
+        </span>
       </div>
     );
   }

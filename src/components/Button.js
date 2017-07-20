@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class Button extends React.Component {
   
@@ -30,5 +31,6 @@ export class Button extends React.Component {
   }
 }
 
-Button.defaultProps = { title: 'btn_' + (((1+Math.random())*0x10000)|0).toString(16).substring(1) };
-
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+};
