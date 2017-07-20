@@ -38,7 +38,8 @@ Run Application:
 
 ### Learn React ###
 
-[GitHub](https://www.codecademy.com/)
-[GitHub](https://facebook.github.io/react/)
+[codecademy.com](https://www.codecademy.com/)
+
+[facebook.github.io](https://facebook.github.io/react/)
 
 
