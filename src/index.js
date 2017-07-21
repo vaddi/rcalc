@@ -8,6 +8,8 @@ import { Button } from './components/Button';
 const initialValue = '';
 const initialOp = undefined;
 
+// is number function
+
 class Calculator extends React.Component {
   
   // https://babeljs.io/docs/plugins/transform-class-properties/
